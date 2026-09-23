@@ -1,0 +1,19 @@
+{
+  "name": "zero-to-code",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lui-hhub/tech-learn.git"
+  },
+  "devDependencies": {
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "animejs": "^4.5.0"
+  }
+}
