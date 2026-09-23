@@ -1,0 +1,9 @@
+name: zero-to-tech
+channels:
+  - defaults
+dependencies:
+  - python
+  - fastapi
+  - pypinyin
+  - snownlp
+prefix: /home/administrator/miniconda3/envs/zero-to-tech
