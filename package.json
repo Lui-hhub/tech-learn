@@ -11,9 +11,12 @@
     "url": "git+https://github.com/Lui-hhub/tech-learn.git"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
     "vite": "^8.3.0"
   },
   "dependencies": {
-    "animejs": "^4.5.0"
+    "animejs": "^4.5.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   }
 }
