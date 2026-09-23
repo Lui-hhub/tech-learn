@@ -1,0 +1,6 @@
+name: zero-to-tech
+channels:
+  - defaults
+dependencies:
+  - python
+prefix: /home/administrator/miniconda3/envs/zero-to-tech
