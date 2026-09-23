@@ -3,4 +3,5 @@ channels:
   - defaults
 dependencies:
   - python
+  - fastapi
 prefix: /home/administrator/miniconda3/envs/zero-to-tech
