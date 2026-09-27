@@ -45,3 +45,8 @@ jobs:
         run: |
           cd backend
           python -c "import main"
+
+      - name: 跑测试
+        run: |
+          cd backend
+          pytest tests/ -v

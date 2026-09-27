@@ -3,3 +3,5 @@ uvicorn[standard]
 pypinyin
 snownlp
 python-dotenv
+pytest
+httpx
