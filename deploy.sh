@@ -48,6 +48,6 @@ fi
 echo "==> [5/5] 健康检查"
 curl -sf "http://127.0.0.1:8000/api/profile" > /dev/null || { echo "后端健康检查失败"; exit 1; }
 curl -sfk "https://127.0.0.1/api/profile" -H "Host: $DOMAIN" > /dev/null || { echo "反代健康检查失败"; exit 1; }
-curl -sf "http://127.0.0.1/" > /dev/null || { echo "前端健康检查失败"; exit 1; }
+curl -sfk "https://127.0.0.1/" -H "Host: $DOMAIN" > /dev/null || { echo "前端健康检查失败"; exit 1; }
 
 echo "部署完成 ✅"
