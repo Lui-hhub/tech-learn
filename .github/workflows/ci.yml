@@ -50,3 +50,19 @@ jobs:
         run: |
           cd backend
           pytest tests/ -v
+
+  deploy:
+    needs: [frontend, backend]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: 部署到服务器
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ubuntu
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd /home/ubuntu/tech-learn
+            ./deploy.sh
